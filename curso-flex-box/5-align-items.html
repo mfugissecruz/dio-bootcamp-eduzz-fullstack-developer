@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos | Align Items</title>
+
+    <style>
+        body {
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 400px;
+            border: 1px solid #2e2e2e;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background-color: #2e2e2e;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            flex: 1;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .central {
+            height: 400px;
+            justify-content: center;
+        }
+
+        .central .item {
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Row</h1>
+    <p>Align Items: center</p>
+    <section class="container center">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <p>Align Items: stretch</p>
+    <section class="container stretch">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <p>Align Items: flex-start</p>
+    <section class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <p>Align Items: flex-end</p>
+    <section class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <p>Align Items: baseline</p>
+    <section class="container baseline">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">outro item</div>
+    </section>
+
+
+
+    <h1>Column</h1>
+    <p>Align Items: center (column)</p>
+    <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <p>Align Items: flex-start (column)</p>
+    <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <p>Align Items: flex-end (column)</p>
+    <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <p>Align Items: baseline (column)</p>
+    <section class="container baseline columnß">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">outro item</div>
+    </section>
+
+    <p>Alinhamento central a tela</p>
+    <section class="container central center">
+        <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores nemo debitis voluptatibus a tenetur fugiat
+            assumenda quos incidunt vitae.
+        </div>
+    </section>
+</body>
+
+</html>
