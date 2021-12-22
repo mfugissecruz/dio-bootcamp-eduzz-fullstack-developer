@@ -24,6 +24,7 @@ div img {
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
 }
 
 header{
@@ -53,7 +54,7 @@ header .menu {
 }
 
 .apresentacao {
-    height: 100vh;
+    height: calc(100vh - 100px);
     align-items: center;
     justify-content: space-between;
 }
@@ -68,7 +69,7 @@ header .menu {
     margin-bottom: 10px;
 }
 
-.texto-apresentacao  a {
+.btn {
     background-color: #122A57;
     color:#fff;
     text-align: center;
@@ -168,4 +169,130 @@ header .menu {
     margin: auto;
 }
 
-/* Aula pausada no minuto 12:06 */
+
+#planos {
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 25%;
+}
+
+#planos h2 {
+    font-size: 32px;
+}
+
+.lista-planos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.item-plano {
+    flex: 1;
+    border: 5px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+
+.item-plano .btn{
+    margin: 10px auto;
+}
+
+.item-plano h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item-plano h3::after{
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin: 20px 0;
+}
+
+.item-plano ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-plano ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-plano ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #122A57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* mobile */
+
+@media(max-width: 920px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao {
+        width: 100%;
+    }
+
+    #quem-somos {
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img {
+        width: 320px;
+        margin: auto;
+    }
+
+    .list-servicos {
+        flex-direction: column;
+
+    }
+
+    .item-servicos {
+        width: 50%;
+        margin: auto;
+    }
+
+    .lista-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .lista-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
