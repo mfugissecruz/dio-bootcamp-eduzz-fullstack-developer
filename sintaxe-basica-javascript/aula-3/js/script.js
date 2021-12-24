@@ -1,8 +1,24 @@
 // Array
 let arrayNome = ['marcelo', 'angel', 'benjamin']
-// console.log(arrayNome)
+
 
 // foreach
-arrayNome.forEach(function (item, index) { console.log(index + 1, item) })
+// arrayNome.forEach(function (item, index) { console.log(index + 1, item) })
+arrayNome.push('skye')
 
-// AULA 4 - VETORES E ARRAYS PAUSADO: 6:32
+// arrayNome.push('lucas')
+// arrayNome.pop() 
+
+arrayNome.unshift('Jesus')
+
+console.log(arrayNome)
+
+
+// OBJETOS
+
+let pessoa = {
+    nome: 'marcelo',
+    idade: 24
+}
+
+console.log(`${pessoa.nome} tem ${pessoa.idade} anos`)
